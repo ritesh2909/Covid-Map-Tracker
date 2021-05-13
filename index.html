@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>World Covid Tracker Map</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      #map{
+          width: 100vw;
+          height: 100vh;
+      }
+  </style>
+  </head>
+  <body>
+
+      <div id='map'></div>
+  </body>
+
+
+
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoicml0ZXNoYXJvcmEyOTA5IiwiYSI6ImNrb25jYWhkZDAwMnkycG81NXdpNDgwemIifQ.fjE6zvEJ54l6zTuaYDecyw';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1
+  });
+</script>
+
+
+
+    <script src="script.js"></script>
+</html>
